@@ -284,27 +284,43 @@
           </p>
         </td>
       </tr>
-          
-      <tr>
+
+      <tr onmouseout="benchmark_stop()" onmouseover="benchmark_start()">
         <td style="padding:20px;width:25%;vertical-align:middle">
-        <a href="images/benchmark.jpg"><img src="images/benchmark.jpg" alt="blind-date" width="160" height="160"></a>
+          <div class="one">
+            <div class="two" id='benchmark'><video  width=100% height=100% muted autoplay loop>
+            <source src="images/benchmark.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+            </video></div>
+            <img src='images/benchmark.jpg' width="160">
+          </div>
+          <script type="text/javascript">
+            function benchmark_start() {
+              document.getElementById('benchmark').style.opacity = "1";
+            }
+
+            function benchmark_stop() {
+              document.getElementById('benchmark').style.opacity = "0";
+            }
+            benchmark_stop()
+          </script>
         </td>
-        <td width="75%" valign="middle">
-        <a href="https://doi.org/10.1016/j.solener.2021.05.056">
-          <span class="papertitle">Benchmarking of Deep Learning Irradiance Forecasting Models from Sky Images - An in-depth Analysis</span>
-        </a>
-        <br>
-        <strong>Quentin Paletta</strong>,
-        <a href="https://www.linkedin.com/in/guillaume-arbod-2b606b44/?originalSubdomain=eng">Guillaume Arbod</a>,
-        <a href="https://www-sigproc.eng.cam.ac.uk/Main/JL">Joan Lasenby</a>,
-        <br>
-        <em>Solar Energy</em>, 2021
-        <br>
-        <a href="https://doi.org/10.1016/j.solener.2021.05.056">paper</a>
-        <p></p>
-        <p>
-          Benchmarking of standard deep learning models for solar power nowcasting using sky images.
-        </p>
+        <td style="padding:20px;width:75%;vertical-align:middle">
+          <a href="https://doi.org/10.1016/j.solener.2021.05.056">
+            <span class="papertitle">Benchmarking of Deep Learning Irradiance Forecasting Models from Sky Images - An in-depth Analysis</span>
+          </a>
+          <br>
+          <strong>Quentin Paletta</strong>,
+          <a href="https://www.linkedin.com/in/guillaume-arbod-2b606b44/?originalSubdomain=eng">Guillaume Arbod</a>,
+          <a href="https://www-sigproc.eng.cam.ac.uk/Main/JL">Joan Lasenby</a>,
+          <br>
+          <em>Solar Energy</em>, 2021
+          <br>
+          <a href="https://doi.org/10.1016/j.solener.2021.05.056">paper</a>
+          <p></p>
+          <p>
+            Benchmarking of standard deep learning models for solar power nowcasting using sky images.
+          </p>
         </td>
       </tr>
 
