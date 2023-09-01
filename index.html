@@ -324,24 +324,24 @@
         </td>
       </tr>
 
-      <tr onmouseout="benchmark_stop()" onmouseover="benchmark_start()">
+      <tr onmouseout="tracker_stop()" onmouseover="tracker_start()">
         <td style="padding:20px;width:25%;vertical-align:middle">
           <div class="one">
-            <div class="two" id='benchmark'><video  width=100% height=100% muted autoplay loop>
-            <source src="images/benchmark.mp4" type="video/mp4">
+            <div class="two" id='tracker'><video  width=100% height=100% muted autoplay loop>
+            <source src="images/tracker.mp4" type="video/mp4">
             Your browser does not support the video tag.
             </video></div>
-            <img src='images/benchmark.jpg' width="160">
+            <img src='images/tracker.jpg' width="160">
           </div>
           <script type="text/javascript">
-            function benchmark_start() {
-              document.getElementById('benchmark').style.opacity = "1";
+            function tracker_start() {
+              document.getElementById('tracker').style.opacity = "1";
             }
 
-            function benchmark_stop() {
-              document.getElementById('benchmark').style.opacity = "0";
+            function tracker_stop() {
+              document.getElementById('tracker').style.opacity = "0";
             }
-            benchmark_stop()
+            tracker_stop()
           </script>
         </td>
         <td style="padding:20px;width:75%;vertical-align:middle">
@@ -361,7 +361,7 @@
           <a href="https://s3.us-east-1.amazonaws.com/climate-change-ai/papers/neurips2020/8/slides.pdf">slides</a>
           <p></p>
           <p>
-            Benchmarking of standard deep learning models for solar power nowcasting using sky images.
+            Sun tracking algorithm based on sky images only.
           </p>
         </td>
       </tr>
