@@ -60,6 +60,44 @@
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
 
+      <tr onmouseout="skyimagenet_stop()" onmouseover="skyimagenet_start()"  bgcolor="#ffffd0">
+        <td style="padding:20px;width:25%;vertical-align:middle">
+          <div class="one">
+            <div class="two" id='skyimagenet'><video  width=100% height=100% muted autoplay loop>
+            <source src="images/skyimagenet.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+            </video></div>
+            <img src='images/skyimagenet.jpg' width="160">
+          </div>
+          <script type="text/javascript">
+            function skyimagenet_start() {
+              document.getElementById('skyimagenet').style.opacity = "1";
+            }
+
+            function skyimagenet_stop() {
+              document.getElementById('skyimagenet').style.opacity = "0";
+            }
+            skyimagenet_stop()
+          </script>
+        </td>
+        <td style="padding:20px;width:75%;vertical-align:middle">
+          <a href="https://www.climatechange.ai/papers/iclr2024/69">
+            <span class="papertitle">Multilocation sky image dataset for solar forecasting and atmospheric science.</span>
+          </a>
+          <br>
+          <a href="https://yuhao-nie.github.io/">Yuhao Nie</a>,
+          <strong>Quentin Paletta</strong>,
+          <a href="https://sherriewang.github.io/">Sherrie Wang</a>,
+          <br>
+          <em>Tackling Climate Change with Machine Learning workshop (ICLR)</em>, 2024
+          <br>
+          <a href="https://www.climatechange.ai/papers/iclr2024/69">paper</a>
+          <p></p>
+          <p>
+          Combining sky images and satellite observations into a single machine learning framework for intra-hour solar forecasting.
+          </p>
+        </td>
+      </tr>
 
       <tr>
         <td style="padding:20px;width:25%;vertical-align:middle">
